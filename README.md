@@ -1,4 +1,4 @@
-# Step 1: Create a GitHub repository on GitHub and clone it
+# Step 1: Clone the GitHub repository
 git clone https://github.com/yourusername/multi-cloud-iac-terraform-gcp.git
 
 # Navigate into the cloned repository
@@ -6,9 +6,15 @@ cd multi-cloud-iac-terraform-gcp
 
 # Step 2: Create the directory structure
 mkdir -p modules/<module_name> examples/<example_name>
+
+# Create essential files
 touch main.tf variables.tf outputs.tf .gitignore
-touch modules/<module_name>/main.tf modules/<module_name>/variables.tf modules/<module_name>/outputs.tf
-touch examples/<example_name>/main.tf examples/<example_name>/variables.tf examples/<example_name>/README.md
+touch modules/<module_name>/main.tf \
+      modules/<module_name>/variables.tf \
+      modules/<module_name>/outputs.tf
+touch examples/<example_name>/main.tf \
+      examples/<example_name>/variables.tf \
+      examples/<example_name>/README.md
 
 # Step 3: Populate the README.md
 cat <<EOL > README.md
@@ -34,7 +40,6 @@ MIT License
 
 ## Author
 Mohammed Rashwan
-mohammedrashwan.com
 EOL
 
 # Step 4: Populate the .gitignore
