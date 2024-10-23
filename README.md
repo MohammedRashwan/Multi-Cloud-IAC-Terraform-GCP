@@ -1,20 +1,3 @@
-# Step 1: Clone the GitHub repository
-git clone https://github.com/yourusername/multi-cloud-iac-terraform-gcp.git
-cd multi-cloud-iac-terraform-gcp
-
-# Step 2: Create the directory structure
-mkdir -p modules/<module_name> examples/<example_name>
-
-# Step 3: Create essential files
-touch main.tf variables.tf outputs.tf .gitignore
-touch modules/<module_name>/main.tf \
-      modules/<module_name>/variables.tf \
-      modules/<module_name>/outputs.tf
-touch examples/<example_name>/main.tf \
-      examples/<example_name>/variables.tf \
-      examples/<example_name>/README.md
-
-# Step 4: Populate the README.md
 cat <<EOL > README.md
 # 🌐 Multi-Cloud Infrastructure as Code (IaC) using Terraform GCP
 
@@ -74,3 +57,29 @@ To create and manage multi-cloud infrastructure efficiently using **Terraform** 
 2. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/multi-cloud-iac-terraform-gcp.git
+   
+3. **Navigate to the Project Directory**
+   ```bash
+   cd multi-cloud-iac-terraform-gcp
+   
+4. **Initialize Terraform**
+   ```bash
+   terraform init
+   
+5. **Plan the Deployment**
+   ```bash
+   terraform plan
+   
+6. **Apply the Changes**
+   ```bash
+   terraform apply
+   
+7. **Apply the Changes**
+   -Check the Google Cloud Console to ensure the resources were created as expected.
+   
+9. **Clean Up Resources**
+   ```bash
+   terraform destroy
+
+
+
