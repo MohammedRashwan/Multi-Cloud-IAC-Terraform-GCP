@@ -55,7 +55,7 @@ To create and manage multi-cloud infrastructure efficiently using **Terraform** 
 
 2. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/multi-cloud-iac-terraform-gcp.git
+   git clone https://github.com/mohammedrashwan/multi-cloud-iac-terraform-gcp.git
    
 3. **Navigate to the Project Directory**
    ```bash
