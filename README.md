@@ -1,4 +1,3 @@
-cat <<EOL > README.md
 # 🌐 Multi-Cloud Infrastructure as Code (IaC) using Terraform GCP
 
 ## Objective
